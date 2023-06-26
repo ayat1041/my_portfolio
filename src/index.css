@@ -2,6 +2,29 @@
 @tailwind components;
 @tailwind utilities;
 
-body{
+body {
     font-family: 'Exo 2', sans-serif;
+}
+
+.menu-container {
+    display: flex;
+    position: fixed;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+}
+
+.menu-container.open {
+    transform: translateX(0);
+}
+.shape{
+    clip-path: polygon(0 0, 100% 0, 100% 50%, 100% 100%, 0 82%, 0% 50%);
+}
+.nav_underline{
+    width: 10vw;
+    animation: UnderLine 500ms ease-in forwards;
+}
+@keyframes UnderLine{
+    to{
+        width: 80vw;
+    }
 }

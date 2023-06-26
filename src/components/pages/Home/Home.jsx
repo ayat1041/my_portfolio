@@ -1,7 +1,9 @@
+import Banner from "./Banner";
+
 const Home = () => {
     return (
         <div>
-            lorem2000
+        <Banner></Banner>
         </div>
     );
 };

@@ -10,7 +10,7 @@ const Banner = () => {
 
         <img
           src="profile_more_casual.png"
-          className="animate__animated animate__backInUp w-60 border-8 mt-6 rounded-full mx-auto"
+          className="animate__animated animate__backInDown w-60 border-8 mt-6 rounded-full mx-auto"
           alt=""
         />
         <h1 className="animate__animated animate__zoomInUp mt-4 text-3xl lg:text-4xl text-yellow-300 font-medium text-center">

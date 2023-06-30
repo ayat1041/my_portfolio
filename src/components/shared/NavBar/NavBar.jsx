@@ -39,7 +39,7 @@ const NavBar = () => {
                 <RiFileDownloadFill
                   className={`text-2xl text-yellow-400 mr-1`}
                 />
-                <h1 className="text-xl tracking-widest font-medium text-yellow-300 uppercase">
+                <h1 className="text-sm lg:text-xl tracking-wider font-medium text-yellow-300 uppercase">
                   Résumé
                 </h1>
               </div>

@@ -1,20 +1,36 @@
-import { CircularProgressbarWithChildren, buildStyles } from "react-circular-progressbar";
+import {
+  CircularProgressbarWithChildren,
+  buildStyles,
+} from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
+import ProgressProvider from "./ProgressProvider";
 
-const SkillProgress = ({ percentage, technology, img }) => {
+const SkillProgress = ({ percentage, technology, img,height }) => {
   return (
-    <CircularProgressbarWithChildren value={percentage} styles={buildStyles({pathColor:`rgba(251, 191, 36, ${percentage / 100})`})}>
-
-      <div className="flex flex-col items-center justify-center">
-      <img
-        className="w-1/3"
-        src="react.png"
-        alt="doge"
-      />
-      <h1 className="text-blue-200 text-[80%] font-bold">{technology}</h1>
-      <h1 className="text-blue-200 text-[90%]">{percentage}%</h1>
-      </div>
-    </CircularProgressbarWithChildren>
+    <ProgressProvider valueStart={0} valueEnd={percentage}>
+      {(value) => (
+        <CircularProgressbarWithChildren
+          value={value}
+          styles={buildStyles({
+            pathColor: `rgba(255, 213, 0, ${value / 100})`,
+            // How long animation takes to go from one percentage to another, in seconds
+            pathTransitionDuration: 2,
+            trailColor: "rgb(0,0,0,0)",
+          })}
+          strokeWidth={3}
+        >
+          <div className="flex flex-col items-center justify-center">
+            <div className="h-10">
+            <img className="h-10 max-w-[40px] mb-2" src={img} alt="doge" />
+            </div>
+            <h1 className="text-blue-200 text-[100%] font-bold">
+              {technology}
+            </h1>
+            <h1 className="text-blue-200 text-[100%]">{percentage}%</h1>
+          </div>
+        </CircularProgressbarWithChildren>
+      )}
+    </ProgressProvider>
   );
 };
 

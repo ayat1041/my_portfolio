@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
 body {
     font-family: 'Exo 2', sans-serif;
 }
@@ -19,12 +21,45 @@ body {
 .shape{
     clip-path: polygon(0 0, 100% 0, 100% 50%, 100% 100%, 0 82%, 0% 50%);
 }
+.torch{
+    /* clip-path: polygon(45% 0, 55% 0, 100% 100%, 0% 100%); */
+    clip-path: polygon(50% 0, 50% 0, 100% 100%, 0% 100%);
+}
 .nav_underline{
-    width: 10vw;
+    width: 10%;
     animation: UnderLine 500ms ease-in forwards;
 }
 @keyframes UnderLine{
     to{
-        width: 80vw;
+        width: 100%;
+        margin-right: 80px;
     }
 }
+
+
+/* animate.css */
+.animate__animated.animate__backInUp {
+    --animate-duration: 1s;
+  }
+  .animate__animated.animate__backInLeft {
+    --animate-duration: 300ms;
+  }
+  .animate__animated.animate__backInLeft.git {
+    --animate-duration: 600ms;
+  }
+  .animate__animated.animate__backInLeft.facebook {
+    --animate-duration: 900ms;
+  }
+
+
+  /* animated bounce up side menu right  */
+  .animate__animated.animate__bounceInUp{
+    --animate-duration: 2500ms;
+  }
+  .animate__animated.animate__headShake{
+    --animate-duration: 4000ms;
+    animation-iteration-count: infinite;
+  }
+  .section_heading{
+    clip-path: polygon(0% 0%, 88% 0, 100% 50%, 65% 100%, 0% 100%);
+  }

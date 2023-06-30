@@ -1,0 +1,40 @@
+.radial-progress {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 8px;
+  }
+  
+  .progress-bar {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    background-color: #d1d5db;
+    border-radius: 50%;
+  }
+  
+  .technology-icon {
+    font-size: 32px;
+    color: #fbbf24;
+  }
+  
+  .technology-name {
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+  }
+  
+  .percentage {
+    font-size: 16px;
+    color: #fbbf24;
+  }
+  

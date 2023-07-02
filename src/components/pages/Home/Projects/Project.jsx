@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { FaGithub } from "react-icons/fa";
 import { AiOutlineClose } from "react-icons/ai";
+import CustomScroll from 'react-custom-scroll';
 import "./Project.css";
 
 

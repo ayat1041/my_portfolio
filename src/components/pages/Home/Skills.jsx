@@ -8,6 +8,9 @@ import jsImage from "../../../assets/javascript.png";
 import githubImage from "../../../assets/github.png";
 import firebaseImage from "../../../assets/firebase.png";
 import tailwindImage from "../../../assets/tailwind.png";
+import wordpressImage from "../../../assets/wordpress.png";
+import sassImage from "../../../assets/sass.png";
+import djangoImage from "../../../assets/django.png";
 import SectionHeader from "../../shared/SectionHeader/SectionHeader";
 
 const Skills = () => {
@@ -27,24 +30,20 @@ const Skills = () => {
             and always working on increasing my expertise.
           </h1>
         </div> */}
-        <SectionHeader title={`skills`} details={`From my learnings so far I have gained my confidence to work with
+        <SectionHeader
+          title={`skills`}
+          details={`From my learnings so far I have gained my confidence to work with
             these skills. I tend to explore new technologies every now and then
-            and always working on increasing my expertise.`}></SectionHeader>
+            and always working on increasing my expertise.`}
+        ></SectionHeader>
         <div
           data-aos="fade-up"
           className="grid grid-cols-2 justify-center lg:grid-cols-5 gap-8 px-4 lg:px-10 py-16"
         >
-          <SkillProgress
-            percentage={90}
-            technology="HTML"
-            img={htmlImage}
-          />
-          
-          <SkillProgress
-            percentage={80}
-            technology="CSS"
-            img={cssImage}
-          />
+          <SkillProgress percentage={90} technology="HTML" img={htmlImage} />
+
+          <SkillProgress percentage={80} technology="CSS" img={cssImage} />
+          <SkillProgress percentage={60} technology="SASS" img={sassImage} />
           <SkillProgress
             percentage={80}
             technology="JavaScript"
@@ -67,15 +66,24 @@ const Skills = () => {
           />
           <SkillProgress
             percentage={50}
-            technology="GitHub"
-            img={githubImage}
-          />
-          <SkillProgress
-            percentage={50}
             technology="Firebase"
             img={firebaseImage}
           />
-          
+          <SkillProgress
+            percentage={60}
+            technology="Django"
+            img={djangoImage}
+          />
+          <SkillProgress
+            percentage={60}
+            technology="WordPress"
+            img={wordpressImage}
+          />
+          <SkillProgress
+            percentage={50}
+            technology="GitHub"
+            img={githubImage}
+          />
         </div>
       </div>
     </div>

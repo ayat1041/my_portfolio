@@ -13,7 +13,7 @@ const About = () => {
         yellow={true}
         >
         </SectionHeader>
-        <div className="text-justify p-4 lg:p-10 text-lg font-medium text-white drop-shadow-md">
+        <div className="text-justify p-4 lg:p-10 text-md lg:text-lg font-medium tracking-wider text-white drop-shadow-md">
           <p>I just learned Full-Stack web development using MERN from Programming Hero. Before that I already had some experience in working with HTML,CSS, Javascript in several projects and also has some diverse knowledge about backend development in Django and Nodejs. I can easily grab new frameworks and work on it in an organized and maintainable way.</p>
         </div>
       </div>

@@ -2,14 +2,16 @@ import { TypeAnimation } from "react-type-animation";
 import { Link as Scroll } from "react-scroll";
 import 'animate.css';
 import Skills_right from "../../shared/Skills_right/Skills_right";
+import profileCasual from "../../../assets/profile_more_casual.png"
+import goDown from "../../../assets/go_down.png"
 
 const Banner = () => {
   return (
     <div className="bg-gradient-to-r from-slate-800 via-slate-800 to-slate-700 min-h-screen w-full relative">
-      <div className="flex flex-col items-center bg-slate-800 mx-10 ml-12 lg:mx-20 py-[65px] min-h-screen">
+      <div className="flex flex-col items-center bg-slate-800 mx-10 ml-12 lg:mx-20 py-[65px] lg:min-h-screen">
 
         <img
-          src="profile_more_casual.png"
+          src={profileCasual}
           className="animate__animated animate__backInDown w-60 border-8 mt-6 rounded-full mx-auto"
           alt=""
         />
@@ -44,10 +46,10 @@ const Banner = () => {
           />
         </div>
         <Skills_right></Skills_right>
-        <Scroll to="about" smooth={true} duration={500}>
+        <Scroll to="about" smooth={true} duration={500} offset={-50}>
           <div className="flex flex-col items-center mt-6 cursor-pointer">
-            <img src="go_down.png" className="opacity-50 animate-ping" alt="" />
-            <img src="go_down.png" className="-mt-8 w-[40px]" alt="" />
+            <img src={goDown} className="opacity-50 animate-ping" alt="" />
+            <img src={goDown} className="-mt-8 w-[40px]" alt="" />
           </div>
         </Scroll>
       </div>

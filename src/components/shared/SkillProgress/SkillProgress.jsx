@@ -20,8 +20,8 @@ const SkillProgress = ({ percentage, technology, img,height }) => {
           strokeWidth={3}
         >
           <div className="flex flex-col items-center justify-center">
-            <div className="h-10">
-            <img className="h-10 max-w-[40px] mb-2" src={img} alt="doge" />
+            <div className="h-10 mb-2">
+            <img className="h-10 max-w-[401px]" src={img} alt="doge" />
             </div>
             <h1 className="text-blue-200 text-[100%] font-bold">
               {technology}

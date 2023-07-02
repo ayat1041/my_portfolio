@@ -1,7 +1,13 @@
 import "./Skills.css";
 import SkillProgress from "../../shared/SkillProgress/SkillProgress";
-import ReactImage from "../../../../public/react.png";
-import mongoDBImage from "../../../../public/mongodb.png";
+import ReactImage from "../../../assets/react.png";
+import mongoDBImage from "../../../assets/mongoDB.png";
+import htmlImage from "../../../assets/html.png";
+import cssImage from "../../../assets/css.png";
+import jsImage from "../../../assets/javascript.png";
+import githubImage from "../../../assets/github.png";
+import firebaseImage from "../../../assets/firebase.png";
+import tailwindImage from "../../../assets/tailwind.png";
 import SectionHeader from "../../shared/SectionHeader/SectionHeader";
 
 const Skills = () => {
@@ -26,16 +32,32 @@ const Skills = () => {
             and always working on increasing my expertise.`}></SectionHeader>
         <div
           data-aos="fade-up"
-          className="grid grid-cols-2 lg:grid-cols-5 gap-8 px-4 lg:px-10 py-16"
+          className="grid grid-cols-2 justify-center lg:grid-cols-5 gap-8 px-4 lg:px-10 py-16"
         >
           <SkillProgress
             percentage={90}
+            technology="HTML"
+            img={htmlImage}
+          />
+          
+          <SkillProgress
+            percentage={80}
+            technology="CSS"
+            img={cssImage}
+          />
+          <SkillProgress
+            percentage={80}
+            technology="JavaScript"
+            img={jsImage}
+          />
+          <SkillProgress
+            percentage={90}
             technology="Tailwind CSS"
-            img={"https://tailwindcss.com/_next/static/media/tailwindcss-mark.3c5441fc7a190fb1800d4a5c7f07ba4b1345a9c8.svg"}
+            img={tailwindImage}
           />
           <SkillProgress
             percentage={70}
-            technology="ReactJS"
+            technology="ReactJs"
             img={ReactImage}
           />
           <SkillProgress
@@ -43,6 +65,17 @@ const Skills = () => {
             technology="MongoDB"
             img={mongoDBImage}
           />
+          <SkillProgress
+            percentage={50}
+            technology="GitHub"
+            img={githubImage}
+          />
+          <SkillProgress
+            percentage={50}
+            technology="Firebase"
+            img={firebaseImage}
+          />
+          
         </div>
       </div>
     </div>

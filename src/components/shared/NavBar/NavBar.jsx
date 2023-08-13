@@ -43,7 +43,7 @@ const NavBar = () => {
                     className={`text-2xl text-yellow-400 mr-1`}
                   />
                   <h1 className="text-sm lg:text-xl tracking-wider font-medium text-yellow-300 uppercase">
-                    Résumé
+                    C.V
                   </h1>
                 </div>
               </a>
